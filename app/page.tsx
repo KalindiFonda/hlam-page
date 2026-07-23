@@ -139,14 +139,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Quick CTA */}
-      <section className="py-20 bg-sage/5">
+      {/* Ready to Retreat + Contact */}
+      <section className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-sage mb-6">Ready to Retreat?</h2>
+          <h2 className="text-sage mb-6">Ready to Retreat? Reach Out</h2>
           <p className="text-lg text-charcoal/80 mb-8">
             Whether you're planning a family getaway, wellness retreat, or romantic escape, Hlam awaits.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Link
               href="/stay"
               className="bg-sage text-white px-8 py-3 rounded-lg font-medium hover:bg-sage/90 transition"
@@ -160,13 +160,7 @@ export default function Home() {
               Taste Our Cheese
             </Link>
           </div>
-        </div>
-      </section>
 
-      {/* Quick Contact */}
-      <section className="py-20 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-sage mb-8">Get in Touch</h2>
           <p className="text-lg text-charcoal/70 mb-8">
             Questions? We'd love to help you plan your perfect stay.
           </p>

@@ -104,20 +104,19 @@ export default function Stay() {
           {/* Perfect For — shared across the whole retreat */}
           <div className="border-t border-sage/20 pt-16">
             <h3 className="text-terracotta font-serif text-2xl mb-8 text-center">Perfect For</h3>
-            <div className="flex flex-wrap justify-center gap-4">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
               {[
                 "Families",
                 "Groups",
                 "Wellness & Yoga Retreats",
                 "Couples on Extended Stays",
                 "Peaceful Nature Immersion",
+                "Foodies & Slow Travellers",
               ].map((label) => (
-                <span
-                  key={label}
-                  className="inline-flex items-center gap-2 bg-sage/5 border border-sage/20 rounded-full px-6 py-3 text-charcoal"
-                >
-                  <span className="text-terracotta">★</span> {label}
-                </span>
+                <div key={label} className="bg-sage/5 p-6 rounded-lg">
+                  <p className="text-terracotta text-2xl mb-2">★</p>
+                  <p className="text-charcoal">{label}</p>
+                </div>
               ))}
             </div>
 
