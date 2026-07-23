@@ -2,9 +2,10 @@ import Image from "next/image";
 import Navigation from "@/components/Navigation";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import ClickableImage from "@/components/ClickableImage";
+import GoogleReviewChip from "@/components/GoogleReviewChip";
 
 export const metadata = {
-  title: "Cheese & Oil - HLAM",
+  title: "Cheese & Oil - Hlam",
   description: "Artisanal cheese and olive oil from Sirana Hlam. Produced with care on the island of Krk.",
 };
 
@@ -17,7 +18,7 @@ export default function Cheese() {
       <section className="pt-32 pb-20 relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/cheese_police.png"
+            src="/images/cheese_police.jpg"
             alt="Artisanal cheese"
             fill
             className="object-cover"
@@ -43,7 +44,10 @@ export default function Cheese() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none mb-12">
             <p className="text-lg text-charcoal leading-relaxed">
-              SIRANA HLAM produces exceptional artisanal cheese using high-quality milk and time-honored techniques, rooted in traditional Croatian dairy practices. Each batch reflects the rich flavours of the Adriatic coast and the Mediterranean forest surrounding our property.
+              Sirana Hlam is a cheese and olive oil producer in Punat, on the island of Krk. We specialise in traditional Croatian dairy products—cheese made from high-quality milk—alongside a selection of premium olive oils, reflecting the rich agricultural heritage of the region.
+            </p>
+            <p className="text-lg text-charcoal leading-relaxed mt-4">
+              Visitors are welcome to join a tasting and learn about the artisanal processes behind our products—an engaging stop for anyone exploring Croatian gastronomy.
             </p>
           </div>
 
@@ -53,7 +57,7 @@ export default function Cheese() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <ClickableImage
-                  src="/images/cheese_closeup.png"
+                  src="/images/cheese_closeup.jpg"
                   alt="Artisanal cheese close-up"
                   width={500}
                   height={400}
@@ -62,93 +66,126 @@ export default function Cheese() {
               </div>
               <div className="space-y-6">
                 <p className="text-lg text-charcoal leading-relaxed">
-                  Each wheel of cheese is crafted with precision and care. Our cheeses are made from the finest local milk, using techniques passed down through generations.
+                  We make our cheese in small batches from high-quality milk, following traditional Croatian recipes.
                 </p>
                 <p className="text-lg text-charcoal leading-relaxed">
-                  The rich, complex flavours come from the unique terroir of Krk—the mineral-rich soil, the ancient olive trees, and the pure Mediterranean air.
-                </p>
-                <p className="text-lg text-charcoal/70 italic">
-                  "Taste the difference that dedication to craft makes."
+                  Some wheels we keep plain, others we flavour with sage or truffle—then age them from mild to vintage.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Cheese Varieties */}
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <div className="bg-sage/5 p-8 rounded-lg hover:shadow-md transition">
-              <h3 className="text-terracotta font-serif text-2xl mb-4">Hard Cheese</h3>
-              <p className="text-charcoal/80 mb-4 leading-relaxed">
-                Our signature hard cheese—aromatic and complex. A divine alternative to Pecorino and Parmesan. Perfect on pasta or as part of a carefully curated cheese board.
+          {/* Variety Feature */}
+          <div className="mb-16 grid md:grid-cols-2 gap-8 items-center">
+            <div className="space-y-4 order-2 md:order-1">
+              <h2 className="text-sage font-serif text-3xl">A Cheese for Every Taste</h2>
+              <p className="text-lg text-charcoal leading-relaxed">
+                From mild to vintage, plain to herb-infused—there's a wheel for every table.
               </p>
-              <p className="text-sm text-sage font-medium">
-                ✓ Made fresh · ✓ Artisanal · ✓ Award-quality
+              <ul className="space-y-2 text-charcoal text-lg">
+                <li className="flex gap-2"><span className="text-terracotta">·</span> Hard cheese (tvrdi sir)</li>
+                <li className="flex gap-2"><span className="text-terracotta">·</span> Classic</li>
+                <li className="flex gap-2"><span className="text-terracotta">·</span> Sage</li>
+                <li className="flex gap-2"><span className="text-terracotta">·</span> Lavender</li>
+                <li className="flex gap-2"><span className="text-terracotta">·</span> Pepper</li>
+                <li className="flex gap-2"><span className="text-terracotta">·</span> Truffle</li>
+                <li className="flex gap-2"><span className="text-terracotta">·</span> …and more</li>
+              </ul>
+              <p className="text-charcoal/70 leading-relaxed">
+                Mild · Mature · Vintage
               </p>
             </div>
-
-            <div className="bg-sage/5 p-8 rounded-lg hover:shadow-md transition">
-              <h3 className="text-terracotta font-serif text-2xl mb-4">Sage Cheese</h3>
-              <p className="text-charcoal/80 mb-4 leading-relaxed">
-                Infused with local sage from our surrounding forest. Herbaceous and refined, this cheese is absolutely divine on its own or paired with fresh bread.
-              </p>
-              <p className="text-sm text-sage font-medium">
-                ✓ Herbal notes · ✓ Subtle elegance · ✓ Unforgettable
-              </p>
-            </div>
-
-            <div className="bg-sage/5 p-8 rounded-lg hover:shadow-md transition">
-              <h3 className="text-terracotta font-serif text-2xl mb-4">Truffle Cheese</h3>
-              <p className="text-charcoal/80 mb-4 leading-relaxed">
-                A luxurious blend featuring the earthy richness of truffle. The perfect indulgence for special occasions and those seeking the extraordinary.
-              </p>
-              <p className="text-sm text-sage font-medium">
-                ✓ Luxurious · ✓ Earthy & rich · ✓ Special moments
-              </p>
+            <div className="order-1 md:order-2">
+              <ClickableImage
+                src="/images/cheese_tower.jpg"
+                alt="A stack of Hlam cheese varieties on a board beneath the olive trees"
+                width={500}
+                height={760}
+                className="w-full h-auto rounded-lg shadow-sm mx-auto max-w-sm"
+              />
             </div>
           </div>
 
-          {/* Guest Review */}
-          <div className="bg-white border-l-4 border-terracotta p-8 rounded-r-lg mb-16 shadow-sm">
-            <p className="text-lg text-charcoal italic mb-4 leading-relaxed">
-              "The hard cheese tastes better and is more aromatic on pasta than Pecorino or Parmesan. A great alternative and a refreshing change. The other cheeses with sage and truffle flavour are divine. I buy them every summer and save them for New Year's Eve for my friends. They're the first to eat up all the cheese from this creamery. For me, it's absolutely perfect."
-            </p>
-            <p className="text-sm font-medium text-sage">— Guest Review</p>
-            <div className="flex gap-1 mt-2">
-              {[...Array(5)].map((_, i) => (
-                <span key={i} className="text-terracotta">★</span>
-              ))}
+          {/* Guest Review with branded product */}
+          <div className="grid md:grid-cols-2 gap-8 items-stretch mb-16">
+            <div className="flex flex-col gap-4">
+              <ClickableImage
+                src="/images/chese_offer.jpg"
+                alt="Branded Sir Hlam cheese wheels, Product of Croatia"
+                width={500}
+                height={760}
+                className="w-full h-full object-cover object-top rounded-lg shadow-sm"
+              />
+              <div className="text-center">
+                <GoogleReviewChip />
+              </div>
+            </div>
+            <div className="flex flex-col justify-center gap-6">
+              <div className="bg-white border-l-4 border-terracotta p-8 rounded-r-lg shadow-sm">
+                <p className="text-terracotta text-sm mb-3">★★★★★</p>
+                <p className="text-lg text-charcoal italic leading-relaxed">
+                  "The hard cheese tastes better and is more aromatic on pasta than Pecorino or Parmesan. A great alternative and a refreshing change. The other cheeses with sage and truffle flavour are divine. I buy them every summer and save them for New Year's Eve for my friends. They're the first to eat up all the cheese from this creamery. For me, it's absolutely perfect."
+                </p>
+              </div>
+              <div className="bg-white border-l-4 border-terracotta p-8 rounded-r-lg shadow-sm">
+                <p className="text-terracotta text-sm mb-3">★★★★★</p>
+                <p className="text-lg text-charcoal italic leading-relaxed">
+                  "We called ahead which made it super easy. The owner is very lovely, lets you taste all the cheeses—and the cheese smelled and tasted incredible."
+                </p>
+              </div>
             </div>
           </div>
 
           {/* Olive Oil */}
           <div className="bg-olive/10 p-12 rounded-lg mb-16">
-            <h2 className="text-olive font-serif text-3xl mb-6">Premium Olive Oil</h2>
+            <h2 className="text-olive font-serif text-3xl mb-6">Extra Virgin Olive Oil &amp; Truffle Oil</h2>
             <p className="text-lg text-charcoal/80 mb-4 leading-relaxed">
-              Produced from ancient olive trees surrounding our property, our oils are pressed using traditional methods. Rich, aromatic, and deeply rooted in place—each bottle tells the story of generations of care and connection to this land.
+              Produced from olive trees surrounding our property, our oils are pressed using traditional methods. Rich, aromatic, and deeply rooted in place—each bottle tells the story of generations of care and connection to this land.
             </p>
-            <p className="text-charcoal/70">
-              For current availability and pricing, get in touch with us directly.
+            <p className="text-lg text-charcoal/80 mb-4 leading-relaxed">
+              Alongside the extra virgin olive oil, we also make a truffle oil—a guest favourite.
             </p>
           </div>
 
         </div>
       </section>
 
-      {/* Order Section */}
+      {/* Tasting & Visit Section */}
       <section className="py-20 bg-sage/5">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-sage mb-8">Order Cheese & Oil</h2>
-          <p className="text-lg text-charcoal/70 mb-8">
-            Interested in tasting our cheeses or ordering our olive oil? Get in touch with us.
+          <h2 className="text-sage mb-6">Come Visit Us</h2>
+          <p className="text-lg text-charcoal/70 mb-4">
+            Stop by the creamery in Punat, Krk to taste our cheeses and olive oil, straight from the source.
           </p>
-          <WhatsAppCTA />
+          <p className="text-lg text-charcoal/70 mb-6">
+            For current availability and pricing, get in touch with us directly.
+          </p>
+          <p className="text-lg text-charcoal mb-2">
+            To book a tasting session, contact us on:
+          </p>
+          <a
+            href="tel:+385992147068"
+            className="inline-block text-2xl font-serif text-terracotta hover:text-sage mb-8"
+          >
+            +385 99 214 7068
+          </a>
+
+          <div className="mb-8">
+            <WhatsAppCTA message="Hi Hlam! I'm interested in your cheese and olive oil." />
+          </div>
+
+          <div className="pt-8 border-t border-sage/20">
+            <p className="text-sage font-medium mb-2">Visit Us</p>
+            <p className="text-charcoal mb-4">Sirana Hlam · Ul. 17. travnja 3<br />51521 Punat, Krk, Croatia</p>
+            <GoogleReviewChip />
+          </div>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="bg-charcoal text-cream py-12">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm opacity-70">© 2026 HLAM. All rights reserved.</p>
+          <p className="text-sm opacity-70">© 2026 Hlam. All rights reserved.</p>
           <p className="text-xs opacity-50 mt-4">Sirana Hlam · Punat, Krk, Croatia</p>
         </div>
       </footer>

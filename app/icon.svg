@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#6B7F56"/>
+  <text x="32" y="44" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="bold" fill="#F5F1E8" text-anchor="middle">H</text>
+  <!-- olive branch -->
+  <g transform="translate(32 52)">
+    <path d="M-14 2 Q0 -3 14 2" stroke="#F5F1E8" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <ellipse cx="-9" cy="0.4" rx="3" ry="1.4" fill="#A8B88C" transform="rotate(-16 -9 0.4)"/>
+    <ellipse cx="9" cy="0.4" rx="3" ry="1.4" fill="#A8B88C" transform="rotate(16 9 0.4)"/>
+    <circle cx="0" cy="-0.8" r="1.8" fill="#8B5A47"/>
+  </g>
+</svg>
