@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Navigation from "@/components/Navigation";
-import ContactForm from "@/components/ContactForm";
+import WhatsAppCTA from "@/components/WhatsAppCTA";
 
 export const metadata = {
   title: "Cheese & Oil - HLAM",
@@ -13,15 +13,25 @@ export default function Cheese() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-sage/10 to-transparent">
+      <section className="pt-32 pb-20 relative h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/cheese_police.png"
+            alt="Artisanal cheese"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/25" />
+        </div>
         <div className="relative z-10 text-center max-w-3xl px-4">
-          <h1 className="text-5xl md:text-6xl text-sage mb-6 drop-shadow-lg font-serif">
+          <h1 className="text-5xl md:text-6xl text-white mb-6 drop-shadow-lg font-serif">
             Sirana Hlam
           </h1>
-          <p className="text-xl md:text-2xl text-charcoal/80 font-light drop-shadow mb-4">
+          <p className="text-xl md:text-2xl text-white/95 font-light drop-shadow mb-4">
             Artisanal Cheese & Olive Oil
           </p>
-          <p className="text-lg text-charcoal/70 drop-shadow">
+          <p className="text-lg text-white/90 drop-shadow">
             Crafted with tradition. Rooted in nature.
           </p>
         </div>
@@ -34,6 +44,33 @@ export default function Cheese() {
             <p className="text-lg text-charcoal leading-relaxed">
               SIRANA HLAM produces exceptional artisanal cheese using high-quality milk and time-honored techniques, rooted in traditional Croatian dairy practices. Each batch reflects the rich flavours of the Adriatic coast and the Mediterranean forest surrounding our property.
             </p>
+          </div>
+
+          {/* Cheese Showcase with Close-ups */}
+          <div className="mb-16 bg-white p-8 rounded-lg shadow-sm">
+            <h2 className="text-center text-sage font-serif text-3xl mb-8">Our Cheeses</h2>
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <Image
+                  src="/images/cheese_closeup.png"
+                  alt="Artisanal cheese close-up"
+                  width={500}
+                  height={400}
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
+              <div className="space-y-6">
+                <p className="text-lg text-charcoal leading-relaxed">
+                  Each wheel of cheese is crafted with precision and care. Our cheeses are made from the finest local milk, using techniques passed down through generations.
+                </p>
+                <p className="text-lg text-charcoal leading-relaxed">
+                  The rich, complex flavours come from the unique terroir of Krk—the mineral-rich soil, the ancient olive trees, and the pure Mediterranean air.
+                </p>
+                <p className="text-lg text-charcoal/70 italic">
+                  "Taste the difference that dedication to craft makes."
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Cheese Varieties */}
@@ -107,12 +144,12 @@ export default function Cheese() {
 
       {/* Order Section */}
       <section className="py-20 bg-sage/5">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-sage text-center mb-8">Order Cheese & Oil</h2>
-          <p className="text-center text-charcoal/70 mb-8">
-            Interested in tasting our cheeses or ordering our olive oil? We'd love to tell you more about our products.
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-sage mb-8">Order Cheese & Oil</h2>
+          <p className="text-lg text-charcoal/70 mb-8">
+            Interested in tasting our cheeses or ordering our olive oil? Get in touch with us.
           </p>
-          <ContactForm type="general" />
+          <WhatsAppCTA />
         </div>
       </section>
 

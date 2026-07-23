@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Navigation from "@/components/Navigation";
-import ContactForm from "@/components/ContactForm";
+import WhatsAppCTA from "@/components/WhatsAppCTA";
 
 export const metadata = {
   title: "HLAM Retreat - Olive Grove Sanctuary on Krk Island",
@@ -112,12 +112,12 @@ export default function Home() {
 
       {/* Quick Contact */}
       <section className="py-20 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-sage text-center mb-8">Get in Touch</h2>
-          <p className="text-center text-charcoal/70 mb-8">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-sage mb-8">Get in Touch</h2>
+          <p className="text-lg text-charcoal/70 mb-8">
             Questions? We'd love to help you plan your perfect retreat.
           </p>
-          <ContactForm type="general" />
+          <WhatsAppCTA />
 
           <div className="mt-12 pt-12 border-t border-sage/20 grid md:grid-cols-2 gap-8 text-center">
             <div>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Navigation from "@/components/Navigation";
 import ImageGallery from "@/components/ImageGallery";
-import ContactForm from "@/components/ContactForm";
+import WhatsAppCTA from "@/components/WhatsAppCTA";
 
 export const metadata = {
   title: "Stay - HLAM Retreat",
@@ -115,12 +115,12 @@ export default function Stay() {
 
       {/* Retreat Inquiry */}
       <section className="py-20 bg-sage/5">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-sage text-center mb-8">Book Your Retreat</h2>
-          <p className="text-center text-charcoal/70 mb-8">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-sage mb-8">Book Your Retreat</h2>
+          <p className="text-lg text-charcoal/70 mb-8">
             Tell us about your vision. Groups welcome. We'll work with you to create the perfect experience.
           </p>
-          <ContactForm type="retreat" />
+          <WhatsAppCTA />
         </div>
       </section>
 
