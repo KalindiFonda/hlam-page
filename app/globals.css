@@ -44,11 +44,13 @@ h3 {
   font-size: 1.875rem;
 }
 
-a {
-  color: var(--sage);
-  transition: color 0.2s ease;
-}
+@layer base {
+  a {
+    color: var(--sage);
+    transition: color 0.2s ease;
+  }
 
-a:hover {
-  color: var(--terracotta);
+  a:hover {
+    color: var(--terracotta);
+  }
 }

@@ -1,5 +1,5 @@
 export default function WhatsAppCTA() {
-  const phoneNumber = "385991217068"; // +385 99 121 7068 without +
+  const phoneNumber = "385992147068"; // +385 99 214 7068 without +
   const message = encodeURIComponent("Hi HLAM! I'm interested in learning more about your retreat and accommodations.");
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
 

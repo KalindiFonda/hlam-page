@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Navigation from "@/components/Navigation";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
+import ClickableImage from "@/components/ClickableImage";
 
 export const metadata = {
   title: "Cheese & Oil - HLAM",
@@ -51,7 +52,7 @@ export default function Cheese() {
             <h2 className="text-center text-sage font-serif text-3xl mb-8">Our Cheeses</h2>
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
-                <Image
+                <ClickableImage
                   src="/images/cheese_closeup.png"
                   alt="Artisanal cheese close-up"
                   width={500}
@@ -126,19 +127,10 @@ export default function Cheese() {
               Produced from ancient olive trees surrounding our property, our oils are pressed using traditional methods. Rich, aromatic, and deeply rooted in place—each bottle tells the story of generations of care and connection to this land.
             </p>
             <p className="text-charcoal/70">
-              For current availability and pricing, please reach out via the form below.
+              For current availability and pricing, get in touch with us directly.
             </p>
           </div>
 
-          {/* Availability Note */}
-          <div className="bg-cream border-2 border-sage/30 p-8 rounded-lg text-center mb-16">
-            <p className="text-charcoal/80 mb-3">
-              We produce limited quantities to maintain quality. Seasonal availability varies.
-            </p>
-            <p className="text-sm text-sage font-medium">
-              Get in touch to check what's available and discuss ordering.
-            </p>
-          </div>
         </div>
       </section>
 

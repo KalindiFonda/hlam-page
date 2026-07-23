@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
+import Lightbox from './Lightbox';
 
 interface ImageGalleryProps {
   house: 'vela' | 'mala';
@@ -29,19 +30,25 @@ const imageMap: Record<string, string[]> = {
 export default function ImageGallery({ house }: ImageGalleryProps) {
   const images = imageMap[house] || [];
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   if (!images.length) return null;
 
   return (
     <div className="space-y-4">
-      <div className="relative h-80 w-full bg-sage/10 rounded-lg overflow-hidden group cursor-pointer">
+      <button
+        type="button"
+        onClick={() => setLightboxIndex(selectedIndex)}
+        aria-label="Enlarge image"
+        className="relative h-80 w-full bg-sage/10 rounded-lg overflow-hidden group cursor-zoom-in block"
+      >
         <Image
           src={images[selectedIndex]}
           alt="Property image"
           fill
           className="object-cover group-hover:scale-105 transition-transform duration-300"
         />
-      </div>
+      </button>
       <div className="grid grid-cols-4 gap-2">
         {images.map((img, idx) => (
           <button
@@ -60,6 +67,16 @@ export default function ImageGallery({ house }: ImageGalleryProps) {
           </button>
         ))}
       </div>
+
+      <Lightbox
+        images={images}
+        index={lightboxIndex}
+        onClose={() => setLightboxIndex(null)}
+        onNavigate={(i) => {
+          setLightboxIndex(i);
+          setSelectedIndex(i);
+        }}
+      />
     </div>
   );
 }

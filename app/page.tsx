@@ -122,7 +122,7 @@ export default function Home() {
           <div className="mt-12 pt-12 border-t border-sage/20 grid md:grid-cols-2 gap-8 text-center">
             <div>
               <p className="text-sage font-medium mb-2">Phone</p>
-              <a href="tel:+385991217068" className="text-charcoal hover:text-terracotta">+385 99 121 7068</a>
+              <a href="tel:+385992147068" className="text-charcoal hover:text-terracotta">+385 99 214 7068</a>
             </div>
             <div>
               <p className="text-sage font-medium mb-2">Location</p>

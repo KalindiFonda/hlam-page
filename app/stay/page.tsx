@@ -96,18 +96,32 @@ export default function Stay() {
                   </ul>
                 </div>
 
-                <div className="space-y-4">
-                  <h3 className="text-terracotta font-serif text-xl">Perfect For</h3>
-                  <ul className="space-y-2 text-charcoal text-sm">
-                    <li className="flex gap-2"><span className="text-terracotta">★</span> Families Seeking Intimacy</li>
-                    <li className="flex gap-2"><span className="text-terracotta">★</span> Small Groups</li>
-                    <li className="flex gap-2"><span className="text-terracotta">★</span> Couples on Extended Stays</li>
-                    <li className="flex gap-2"><span className="text-terracotta">★</span> Peaceful Nature Immersion</li>
-                  </ul>
-                </div>
               </div>
 
               <ImageGallery house="mala" />
+            </div>
+          </div>
+
+          {/* Perfect For — shared across the whole retreat */}
+          <div className="border-t border-sage/20 pt-16">
+            <h3 className="text-terracotta font-serif text-2xl mb-8 text-center">Perfect For</h3>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+              <div className="bg-sage/5 p-6 rounded-lg">
+                <p className="text-terracotta text-2xl mb-2">★</p>
+                <p className="text-charcoal">Families &amp; Small Groups</p>
+              </div>
+              <div className="bg-sage/5 p-6 rounded-lg">
+                <p className="text-terracotta text-2xl mb-2">★</p>
+                <p className="text-charcoal">Wellness &amp; Yoga Retreats</p>
+              </div>
+              <div className="bg-sage/5 p-6 rounded-lg">
+                <p className="text-terracotta text-2xl mb-2">★</p>
+                <p className="text-charcoal">Couples on Extended Stays</p>
+              </div>
+              <div className="bg-sage/5 p-6 rounded-lg">
+                <p className="text-terracotta text-2xl mb-2">★</p>
+                <p className="text-charcoal">Peaceful Nature Immersion</p>
+              </div>
             </div>
           </div>
         </div>
