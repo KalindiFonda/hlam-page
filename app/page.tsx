@@ -17,10 +17,10 @@ export default function Home() {
       <section className="pt-32 pb-20 relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/vela_entrace_upstairs_pretty.jpeg"
-            alt="Olive grove retreat"
+            src="/images/olives_with_hammock.png"
+            alt="Hammock beneath the olive trees at HLAM"
             fill
-            className="object-cover object-top"
+            className="object-cover object-center"
             priority
           />
           <div className="absolute inset-0 bg-black/30" />
