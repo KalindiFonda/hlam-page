@@ -20,7 +20,7 @@ export default function Stay() {
             src="/images/vela_entrace_upstairs_pretty.jpeg"
             alt="Retreat spaces"
             fill
-            className="object-cover"
+            className="object-cover object-top"
             priority
           />
           <div className="absolute inset-0 bg-black/30" />
