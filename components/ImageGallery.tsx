@@ -33,8 +33,8 @@ const imageMap: Record<string, string[]> = {
     '/images/mala_porch.jpeg',
   ],
   grounds: [
-    '/images/olives_with_hammock.jpg',
     '/images/sunset.jpg',
+    '/images/olives_with_hammock.jpg',
     '/images/vela_terrace_view_olives_right.jpg',
     '/images/vela_back_garden.jpeg',
     '/images/vela_front_olive_view.jpg',
@@ -48,12 +48,29 @@ export default function ImageGallery({ house }: ImageGalleryProps) {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   // Nature shots look best centered; interiors have their subject near the top.
-  // Add an entry here to override the crop for a single image.
-  const positionOverrides: Record<string, string> = {
-    // '/images/mala_porch.jpeg': 'object-center',
+  // Desktop-only (md:) crop tweaks per album — phones keep the defaults, which
+  // already look right there. 0% = top of photo, 50% = center, 100% = bottom.
+  const positionOverrides: Record<string, Record<string, string>> = {
+    vela: {
+      '/images/vela_single_upstairs.jpeg': 'md:object-[50%_45%]',
+      '/images/vela_living_area_upstairs.jpeg': 'md:object-[50%_25%]',
+      '/images/vela_kamin_upstairs.jpeg': 'md:object-[50%_45%]',
+      '/images/vela_kitchen_upstairs.jpeg': 'md:object-[50%_25%]',
+      '/images/vela_front_olive_view.jpg': 'md:object-[50%_25%]',
+    },
+    mala: {
+      '/images/mala_porch.jpeg': 'md:object-[50%_15%]',
+      '/images/mala_room4.jpeg': 'md:object-[50%_50%]',
+    },
+    grounds: {
+      '/images/vela_terrace_view_olives_right.jpg': 'md:object-[50%_40%]',
+      '/images/vela_back_garden.jpeg': 'md:object-[50%_15%]',
+      '/images/vela_table_terrace.jpeg': 'md:object-[50%_20%]',
+    },
   };
   const defaultPos = house === 'grounds' ? 'object-center' : 'object-top';
-  const posFor = (img: string) => positionOverrides[img] ?? defaultPos;
+  const posFor = (img: string) =>
+    `${defaultPos} ${positionOverrides[house]?.[img] ?? ''}`.trim();
 
   if (!images.length) return null;
 

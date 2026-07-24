@@ -78,7 +78,7 @@ export default function Stay() {
             {/* Mala - Smaller House */}
             <div className="mb-8">
               <h2 className="text-sage mb-2">Mala</h2>
-              <p className="text-lg text-charcoal/70">The Cosy House • One Level</p>
+              <p className="text-lg text-charcoal/70">The Cosy House • One Level • Next to the Viewing Platform</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 items-start">
@@ -91,7 +91,6 @@ export default function Stay() {
                     <li className="flex gap-2"><span className="text-sage">✓</span> Cosy Living Area</li>
                     <li className="flex gap-2"><span className="text-sage">✓</span> Porch</li>
                     <li className="flex gap-2"><span className="text-sage">✓</span> Bathroom</li>
-                    <li className="flex gap-2"><span className="text-sage">✓</span> Next to the Viewing Platform</li>
                   </ul>
                 </div>
 
@@ -111,7 +110,7 @@ export default function Stay() {
                 "Wellness & Yoga Retreats",
                 "Couples on Extended Stays",
                 "Peaceful Nature Immersion",
-                "Foodies & Slow Travellers",
+                "Pets Welcome",
               ].map((label) => (
                 <div key={label} className="bg-sage/5 p-6 rounded-lg">
                   <p className="text-terracotta text-2xl mb-2">★</p>
@@ -122,7 +121,7 @@ export default function Stay() {
 
             <div className="mt-10 max-w-2xl mx-auto text-center space-y-3">
               <p className="text-lg text-charcoal/80">
-                Book the whole estate — or just one house. Vela and Mala sit more than 50 metres apart, each with its own privacy.
+                Book the whole estate — or just one house. Vela and Mala sit more than 100 metres apart, each with its own privacy.
               </p>
               <p className="text-charcoal/60">
                 Surrounded by forest and nature on all sides.

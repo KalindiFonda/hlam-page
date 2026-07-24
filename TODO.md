@@ -7,6 +7,7 @@
 - [ ] Enable "Enforce HTTPS" on GitHub Pages once the hlam.hr certificate is issued
 
 ## Ideas / Nice to have
+- [ ] Footer credit: "made by KF" linking to kalindifonda.com, inline with the © line (drafted, removed for now)
 - [ ] Per-cheese descriptions (removed from cheese page as too much; saved here):
   - *Hard Cheese* — aromatic and complex, an alternative to Pecorino and Parmesan; perfect on pasta or a cheese board
   - *Sage Cheese* — infused with local sage; herbaceous, good on its own or with fresh bread

@@ -109,7 +109,7 @@ export default function Home() {
                 alt="A stack of Hlam cheese varieties beneath the olive trees"
                 width={500}
                 height={400}
-                className="w-full h-72 object-cover object-top rounded-lg shadow-sm"
+                className="w-full h-72 object-cover object-[50%_30%] rounded-lg shadow-sm"
               />
             </div>
             <div>
