@@ -78,7 +78,7 @@ export default function StayHr() {
             {/* Mala */}
             <div className="mb-8">
               <h2 className="text-sage mb-2">Mala</h2>
-              <p className="text-lg text-charcoal/70">Ugodna kuća • Jedna etaža • Uz vidikovac</p>
+              <p className="text-lg text-charcoal/70">Vaše skrovito utočište • Uz privatni vidikovac</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 items-start">
@@ -104,8 +104,8 @@ export default function StayHr() {
             <h3 className="text-terracotta font-serif text-2xl mb-8 text-center">Idealno za</h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
               {[
-                "Obitelji i grupe",
-                "Parove",
+                "Obitelji",
+                "Grupe",
                 "Wellness i yoga retreate",
                 "Mirno uranjanje u prirodu",
                 "Stomatološke aranžmane",
@@ -149,7 +149,7 @@ export default function StayHr() {
           <div className="text-center mb-10">
             <h2 className="text-sage mb-3">Aktivnosti i okolica</h2>
             <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-              Pješačke i biciklističke staze kreću ravno s imanja. More i plaže su na kratkoj vožnji, uz lokalne kušaonice vina i brojne restorane na otoku. Zračna luka udaljena je 40 minuta vožnje.
+              Pješačke, biciklističke i gravel staze kreću ravno s imanja. More i plaže su na kratkoj vožnji, uz lokalne kušaonice vina i brojne restorane na otoku. Zračna luka udaljena je 40 minuta vožnje.
             </p>
           </div>
           <ImageGallery house="activities" />

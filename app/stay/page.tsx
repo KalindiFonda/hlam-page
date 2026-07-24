@@ -78,7 +78,7 @@ export default function Stay() {
             {/* Mala - Smaller House */}
             <div className="mb-8">
               <h2 className="text-sage mb-2">Mala</h2>
-              <p className="text-lg text-charcoal/70">The Cosy House • One Level • Next to the Viewing Platform</p>
+              <p className="text-lg text-charcoal/70">Your Secluded Sanctuary • Next to the Private Viewing Platform</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 items-start">
@@ -105,8 +105,8 @@ export default function Stay() {
             <h3 className="text-terracotta font-serif text-2xl mb-8 text-center">Perfect For</h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
               {[
-                "Families & Groups",
-                "Couples",
+                "Families",
+                "Groups",
                 "Wellness & Yoga Retreats",
                 "Peaceful Nature Immersion",
                 "Dental Retreat Packages",
@@ -150,7 +150,7 @@ export default function Stay() {
           <div className="text-center mb-10">
             <h2 className="text-sage mb-3">Activities &amp; Surroundings</h2>
             <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-              Hiking and biking trails start right from the property. The sea and beaches are a short drive away, with local wine tasting and plenty of restaurants around the island. The airport is 40 minutes by car.
+              Hiking, biking, and gravel riding trails start right from the property. The sea and beaches are a short drive away, with local wine tasting and plenty of restaurants around the island. The airport is 40 minutes by car.
             </p>
           </div>
           <ImageGallery house="activities" />

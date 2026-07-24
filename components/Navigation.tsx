@@ -12,11 +12,13 @@ export default function Navigation() {
         { href: '/hr', label: 'Početna' },
         { href: '/hr/stay', label: 'Smještaj' },
         { href: '/hr/cheese_and_oil', label: 'Sir i ulje' },
+        { href: '/hr/dental', label: 'Stomatologija' },
       ]
     : [
         { href: '/', label: 'Home' },
         { href: '/stay', label: 'Stay' },
         { href: '/cheese_and_oil', label: 'Cheese & Oil' },
+        { href: '/dental', label: 'Dental' },
       ];
 
   // Map the current page to its counterpart in the other language.

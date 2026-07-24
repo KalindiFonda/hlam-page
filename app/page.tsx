@@ -123,7 +123,7 @@ export default function Home() {
             <div>
               <h2 className="text-sage mb-4">From Our Sirana</h2>
               <p className="text-lg mb-6 leading-relaxed">
-                We don't just host, we make. Artisanal cheese and extra virgin olive oil, produced right here and loved by locals and visitors alike.
+                We don't just host. We make artisanal cheese and extra virgin olive oil, produced right here and loved by locals and visitors alike.
               </p>
               <Link
                 href="/cheese_and_oil"
@@ -155,7 +155,10 @@ export default function Home() {
             Whether you're planning a family getaway, wellness retreat, or romantic escape, Hlam awaits.
           </p>
           <p className="text-sm text-charcoal/60 mb-8">
-            We also offer dental retreat packages. Ask us for details.
+            We also offer dental retreat packages.{" "}
+            <Link href="/dental" className="text-sage hover:text-terracotta">
+              Learn more →
+            </Link>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Link

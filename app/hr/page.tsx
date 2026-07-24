@@ -123,7 +123,7 @@ export default function HomeHr() {
             <div>
               <h2 className="text-sage mb-4">Iz naše sirane</h2>
               <p className="text-lg mb-6 leading-relaxed">
-                Ne nudimo samo smještaj, mi i proizvodimo. Domaći sir i ekstra djevičansko maslinovo ulje, proizvedeni ovdje, omiljeni među mještanima i gostima.
+                Ne nudimo samo smještaj. Proizvodimo domaći sir i ekstra djevičansko maslinovo ulje, ovdje na imanju, omiljene među mještanima i gostima.
               </p>
               <Link
                 href="/hr/cheese_and_oil"
@@ -155,7 +155,10 @@ export default function HomeHr() {
             Bilo da planirate obiteljski odmor, wellness retreat ili romantični bijeg, Hlam vas čeka.
           </p>
           <p className="text-sm text-charcoal/60 mb-8">
-            Nudimo i stomatološke aranžmane. Javite nam se za detalje.
+            Nudimo i stomatološke aranžmane.{" "}
+            <Link href="/hr/dental" className="text-sage hover:text-terracotta">
+              Saznajte više →
+            </Link>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Link
