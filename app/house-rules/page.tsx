@@ -3,15 +3,15 @@ import WhatsAppCTA from "@/components/WhatsAppCTA";
 
 export const metadata = {
   title: "House Rules - Hlam",
-  description: "House rules for staying at Hlam — an off-grid property in nature on the island of Krk.",
+  description: "House rules for staying at Hlam, an off-grid property in nature on the island of Krk.",
 };
 
 const rulesEn = [
-  "The house has no municipal connection for electricity or water — we have solar power for lighting, and we collect rainwater, so please use sparingly. Electricity use is limited: lighting, the fridge, and smaller appliances (computers, phones, screens).",
+  "The house has no municipal connection for electricity or water. We have solar power for lighting, and we collect rainwater, so please use sparingly. Electricity use is limited: lighting, the fridge, and smaller appliances (computers, phones, screens).",
   "For the water heater and larger appliances, the generator must be switched on.",
-  "The property is fenced. The entrance gate should always be kept closed (so animals don't get in) — the same goes for house doors and windows when we're not there.",
+  "The property is fenced. The entrance gate should always be kept closed (so animals don't get in). The same goes for house doors and windows when we're not there.",
   "Otherwise, look after everything as if it were your own.",
-  "When leaving, if there are multiple cars, we can hide the keys somewhere so we don't carry them with us. We just need to make sure the gate is locked.",
+  "When leaving, if there are multiple cars, you can lock the keys into the lockers so you don't carry them with you. Just make sure the gate is locked.",
   "Pets are welcome.",
 ];
 
@@ -20,7 +20,7 @@ const rulesHr = [
   "Za bojler i veće potrošače mora se uklopiti agregat.",
   "Imanje je ograđeno, pa porton mora uvijek biti zatvoren (da ne ulaze životinje), isto vrijedi i za vrata i prozore kuće kad nas nema.",
   "Ostalo čuvajte kao da je vaše.",
-  "Kod odlaska, ako ima više auta, ključe možete negdje skriti da ih ne nosite sa sobom. Samo treba provjeriti da je porton zaključan.",
+  "Kod odlaska, ako ima više auta, ključeve možete zaključati u ormariće da ih ne nosite sa sobom. Samo treba provjeriti da je porton zaključan.",
   "Kućni ljubimci su dobrodošli.",
 ];
 
@@ -81,7 +81,7 @@ export default function HouseRules() {
       </section>
 
       {/* Contact */}
-      <section className="py-16 bg-sage/5">
+      <section id="contact" className="py-16 bg-sage/5 scroll-mt-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-lg text-charcoal/70 mb-6">
             Questions about your stay? · Pitanja o boravku?

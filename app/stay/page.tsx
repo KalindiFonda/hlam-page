@@ -105,11 +105,11 @@ export default function Stay() {
             <h3 className="text-terracotta font-serif text-2xl mb-8 text-center">Perfect For</h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
               {[
-                "Families",
-                "Groups",
+                "Families & Groups",
+                "Couples",
                 "Wellness & Yoga Retreats",
-                "Couples on Extended Stays",
                 "Peaceful Nature Immersion",
+                "Dental Retreat Packages",
                 "Pets Welcome",
               ].map((label) => (
                 <div key={label} className="bg-sage/5 p-6 rounded-lg">
@@ -121,7 +121,7 @@ export default function Stay() {
 
             <div className="mt-10 max-w-2xl mx-auto text-center space-y-3">
               <p className="text-lg text-charcoal/80">
-                Book the whole estate — or just one house. Vela and Mala sit more than 100 metres apart, each with its own privacy.
+                Book the whole estate, or just one house. Vela and Mala sit more than 100 metres apart, each with its own privacy.
               </p>
               <p className="text-charcoal/60">
                 Surrounded by forest and nature on all sides.
@@ -137,31 +137,38 @@ export default function Stay() {
           <div className="text-center mb-10">
             <h2 className="text-sage mb-3">The Grounds &amp; Nature</h2>
             <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-              Olive grove, a shaded hammock, and Adriatic sunsets — the landscape that surrounds both houses.
+              Olive grove, a shaded hammock, the viewing tower, and Adriatic sunsets: the landscape that surrounds both houses.
             </p>
           </div>
           <ImageGallery house="grounds" />
+        </div>
+      </section>
 
-          {/* Viewing tower — photo placeholder */}
-          <div className="mt-8 border-2 border-dashed border-sage/40 rounded-lg p-8 text-center bg-sage/5">
-            <p className="text-3xl mb-2">🗼</p>
-            <p className="text-sage font-medium mb-1">The Viewing Tower</p>
-            <p className="text-sm text-charcoal/60">
-              Climb above the treetops for views across the olive groves to the Adriatic. Photo coming soon.
+      {/* Activities & Surroundings */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-sage mb-3">Activities &amp; Surroundings</h2>
+            <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
+              Hiking and biking trails start right from the property. The sea and beaches are a short drive away, with local wine tasting and plenty of restaurants around the island. The airport is 40 minutes by car.
             </p>
           </div>
+          <ImageGallery house="activities" />
         </div>
       </section>
 
       {/* Retreat Inquiry */}
-      <section className="py-20 bg-sage/5">
+      <section id="contact" className="py-20 bg-sage/5 scroll-mt-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-sage mb-8">Book Your Stay</h2>
-          <p className="text-lg text-charcoal/70 mb-4">
+          <p className="text-lg text-charcoal/70 mb-8">
             Tell us about your vision. Groups welcome. We'll work with you to create the perfect experience.
           </p>
-          <p className="text-charcoal/60 mb-8">
-            Contact us for seasonal rates.
+          <p className="mb-6 text-sm text-charcoal/60">
+            We also offer dental retreat packages. Ask us for details.
+          </p>
+          <p className="mb-6">
+            <a href="tel:+385992147068" className="text-xl font-serif text-terracotta hover:text-sage">+385 99 214 7068</a>
           </p>
           <WhatsAppCTA message="Hi Hlam! I'm interested in learning more about your accommodation." />
         </div>

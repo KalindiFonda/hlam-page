@@ -35,12 +35,20 @@ export default function Home() {
             <br />
             Retreat, connect, and rediscover.
           </p>
-          <Link
-            href="/stay"
-            className="inline-block bg-sage text-white px-8 py-3 rounded-lg font-medium hover:bg-sage/90 transition"
-          >
-            Plan Your Stay
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/stay"
+              className="inline-block bg-sage text-white px-8 py-3 rounded-lg font-medium hover:bg-sage/90 transition"
+            >
+              Plan Your Stay
+            </Link>
+            <Link
+              href="/cheese_and_oil"
+              className="inline-block border-2 border-white !text-white px-8 py-3 rounded-lg font-medium hover:bg-white/10 transition"
+            >
+              Taste Our Products
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -54,7 +62,7 @@ export default function Home() {
                 Nestled in the heart of nature on the island of Krk, just above Punat, Hlam is a destination for authentic retreats, family getaways, and artisanal food experiences.
               </p>
               <p className="text-lg mb-6 leading-relaxed">
-                Surrounded by olive trees and Mediterranean forest, our two houses offer the perfect escape. Powered by the sun and supplied by collected rainwater, life here moves with the rhythm of nature—simple, quiet, and close to the land.
+                Surrounded by olive trees and Mediterranean forest, our two houses offer the perfect escape. Powered by the sun and supplied by collected rainwater, life here moves with the rhythm of nature: simple, quiet, and close to the land.
               </p>
               <Link
                 href="/stay"
@@ -115,10 +123,10 @@ export default function Home() {
             <div>
               <h2 className="text-sage mb-4">From Our Sirana</h2>
               <p className="text-lg mb-6 leading-relaxed">
-                We don't just host—we make. Artisanal cheese and extra virgin olive oil, produced right here and loved by locals and visitors alike.
+                We don't just host, we make. Artisanal cheese and extra virgin olive oil, produced right here and loved by locals and visitors alike.
               </p>
               <Link
-                href="/cheese"
+                href="/cheese_and_oil"
                 className="inline-block text-sage font-medium hover:text-terracotta transition"
               >
                 Discover Cheese &amp; Oil →
@@ -140,11 +148,14 @@ export default function Home() {
       </section>
 
       {/* Ready to Retreat + Contact */}
-      <section className="py-20 bg-white">
+      <section id="contact" className="py-20 bg-white scroll-mt-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-sage mb-6">Ready to Retreat? Reach Out</h2>
-          <p className="text-lg text-charcoal/80 mb-8">
+          <p className="text-lg text-charcoal/80 mb-3">
             Whether you're planning a family getaway, wellness retreat, or romantic escape, Hlam awaits.
+          </p>
+          <p className="text-sm text-charcoal/60 mb-8">
+            We also offer dental retreat packages. Ask us for details.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Link
@@ -154,7 +165,7 @@ export default function Home() {
               Explore Accommodations
             </Link>
             <Link
-              href="/cheese"
+              href="/cheese_and_oil"
               className="bg-white text-sage border-2 border-sage px-8 py-3 rounded-lg font-medium hover:bg-sage/10 transition"
             >
               Taste Our Cheese
@@ -173,9 +184,12 @@ export default function Home() {
             </div>
             <div>
               <p className="text-sage font-medium mb-2">Location</p>
-              <p className="text-charcoal mb-4">Hlam · Punat, Island of Krk<br />Croatia</p>
-              <GoogleReviewChip />
+              <p className="text-charcoal">Hlam · Punat, Island of Krk<br />Croatia</p>
             </div>
+          </div>
+
+          <div className="mt-10 text-center">
+            <GoogleReviewChip />
           </div>
         </div>
       </section>

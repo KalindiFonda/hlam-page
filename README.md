@@ -8,7 +8,7 @@ Website for **Hlam**, a nature retreat and artisanal cheese & olive oil producer
 
 - `/` — home: olive grove hero, about, cheese teaser, contact
 - `/stay` — the two houses (Vela & Mala), photo galleries, grounds album, booking via WhatsApp
-- `/cheese` — Sirana Hlam: cheeses, olive & truffle oil, guest reviews, tasting visits
+- `/cheese_and_oil` — Sirana Hlam: cheeses, olive & truffle oil, guest reviews, tasting visits
 
 ## Tech
 
@@ -32,7 +32,7 @@ Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds the stat
 ## Images
 
 - `public/images/` — web-optimised photos (max 1920 px JPEG)
-- `originals/` — full-resolution originals, kept out of the deployed site
+- `originals/` — full-resolution originals, local only (gitignored)
 - Gallery crops can be tuned per image in `components/ImageGallery.tsx`
 
 ## What's next

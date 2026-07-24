@@ -1,4 +1,4 @@
-export default function GoogleReviewChip() {
+export default function GoogleReviewChip({ lang = 'en' }: { lang?: 'en' | 'hr' }) {
   return (
     <a
       href="https://www.google.com/maps/search/?api=1&query=Sirana+Hlam+Punat+Krk"
@@ -15,7 +15,7 @@ export default function GoogleReviewChip() {
       </svg>
       <span className="text-terracotta tracking-tight">★★★★★</span>
       <span className="text-charcoal font-medium">5.0</span>
-      <span className="text-charcoal/60">· 100+ Google reviews</span>
+      <span className="text-charcoal/60">· {lang === 'hr' ? '100+ Google recenzija' : '100+ Google reviews'}</span>
     </a>
   );
 }

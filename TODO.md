@@ -1,12 +1,19 @@
 # HLAM Website — TODO
 
 ## Planned
-- [ ] **Add language support** — at minimum Croatian + English (site is currently English-only). Options: separate `/hr` routes, or a lightweight toggle with translated copy files.
+- [ ] Trgovina za tujino (shop/ordering for abroad)
+- [ ] Ability to book a cheese tasting (maybe a booking flow, not just WhatsApp)
+- [ ] Rate info for stays (seasonal rates — removed "contact us for seasonal rates" line for now)
+- [ ] Add photo of the olive oil & truffle oil (user will provide)
+- [ ] Add photo of the sea / hiking surroundings (user will provide)
+- [x] Croatian version — live under `/hr` with EN/HR toggle in nav (translations by Claude, need a native read-through)
+- [ ] German + Italian versions (same pattern as `/hr`)
 - [ ] Review and personalise all site text (see copy review in progress)
 - [ ] Replace cheese hero (`cheese_police.png`) if a better photo is found
 - [ ] Enable "Enforce HTTPS" on GitHub Pages once the hlam.hr certificate is issued
 
 ## Ideas / Nice to have
+- [ ] Dentistry angle: the owner is a dentist. Dental tourism is big in Croatia; could pair treatment with a recovery stay in nature. Keep separate from the retreat brand (small mention or its own page later, not a main section).
 - [ ] Footer credit: "made by KF" linking to kalindifonda.com, inline with the © line (drafted, removed for now)
 - [ ] Per-cheese descriptions (removed from cheese page as too much; saved here):
   - *Hard Cheese* — aromatic and complex, an alternative to Pecorino and Parmesan; perfect on pasta or a cheese board
