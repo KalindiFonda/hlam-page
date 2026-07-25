@@ -131,8 +131,11 @@ export default function Dental() {
           <p className="text-lg text-charcoal/70 mb-6">
             Tell us what you need and we will arrange your treatment and your stay together.
           </p>
-          <p className="mb-6">
+          <p className="mb-2">
             <a href="tel:+385992147068" className="text-xl font-serif text-terracotta hover:text-sage">+385 99 214 7068</a>
+          </p>
+          <p className="mb-6">
+            <a href="mailto:example@example.com" className="text-charcoal hover:text-terracotta">example@example.com</a>
           </p>
           <WhatsAppCTA message="Hi Hlam! I'm interested in a dental retreat package." />
         </div>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import ImageGallery from "@/components/ImageGallery";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
@@ -165,10 +166,16 @@ export default function Stay() {
             Tell us about your vision. Groups welcome. We'll work with you to create the perfect experience.
           </p>
           <p className="mb-6 text-sm text-charcoal/60">
-            We also offer dental retreat packages. Ask us for details.
+            We also offer dental retreat packages.{" "}
+            <Link href="/dental" className="text-sage hover:text-terracotta">
+              Learn more →
+            </Link>
+          </p>
+          <p className="mb-2">
+            <a href="tel:+385992147068" className="text-xl font-serif text-terracotta hover:text-sage">+385 99 214 7068</a>
           </p>
           <p className="mb-6">
-            <a href="tel:+385992147068" className="text-xl font-serif text-terracotta hover:text-sage">+385 99 214 7068</a>
+            <a href="mailto:example@example.com" className="text-charcoal hover:text-terracotta">example@example.com</a>
           </p>
           <WhatsAppCTA message="Hi Hlam! I'm interested in learning more about your accommodation." />
         </div>

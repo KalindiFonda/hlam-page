@@ -38,15 +38,21 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/stay"
-              className="inline-block bg-sage text-white px-8 py-3 rounded-lg font-medium hover:bg-sage/90 transition"
+              className="inline-block whitespace-nowrap border-2 border-white !text-white px-8 py-3 rounded-lg font-medium hover:bg-white/10 transition"
             >
               Plan Your Stay
             </Link>
             <Link
               href="/cheese_and_oil"
-              className="inline-block border-2 border-white !text-white px-8 py-3 rounded-lg font-medium hover:bg-white/10 transition"
+              className="inline-block whitespace-nowrap border-2 border-white !text-white px-8 py-3 rounded-lg font-medium hover:bg-white/10 transition"
             >
               Taste Our Products
+            </Link>
+            <Link
+              href="/dental"
+              className="inline-block whitespace-nowrap border-2 border-white !text-white px-8 py-3 rounded-lg font-medium hover:bg-white/10 transition"
+            >
+              Dental Packages
             </Link>
           </div>
         </div>
@@ -154,31 +160,30 @@ export default function Home() {
           <p className="text-lg text-charcoal/80 mb-3">
             Whether you're planning a family getaway, wellness retreat, or romantic escape, Hlam awaits.
           </p>
-          <p className="text-sm text-charcoal/60 mb-8">
+          <p className="text-sm text-charcoal/60 mb-1">
             We also offer dental retreat packages.{" "}
             <Link href="/dental" className="text-sage hover:text-terracotta">
               Learn more →
             </Link>
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Link
-              href="/stay"
-              className="bg-sage text-white px-8 py-3 rounded-lg font-medium hover:bg-sage/90 transition"
-            >
-              Explore Accommodations
+          <p className="text-sm text-charcoal/60 mb-8">
+            We have a cheese and oil store.{" "}
+            <Link href="/cheese_and_oil" className="text-sage hover:text-terracotta">
+              Come taste it →
             </Link>
-            <Link
-              href="/cheese_and_oil"
-              className="bg-white text-sage border-2 border-sage px-8 py-3 rounded-lg font-medium hover:bg-sage/10 transition"
-            >
-              Taste Our Cheese
-            </Link>
+          </p>
+          <div className="mb-8 space-y-2">
+            <p>
+              <a href="tel:+385992147068" className="text-xl font-serif text-terracotta hover:text-sage">+385 99 214 7068</a>
+            </p>
+            <p>
+              <a href="mailto:example@example.com" className="text-charcoal hover:text-terracotta">example@example.com</a>
+            </p>
           </div>
-
           <p className="text-lg text-charcoal/70 mb-8">
             Questions? We'd love to help you plan your perfect stay.
           </p>
-          <WhatsAppCTA />
+          <WhatsAppCTA variant="white" />
 
           <div className="mt-12 pt-12 border-t border-sage/20 grid md:grid-cols-2 gap-8 text-center">
             <div>

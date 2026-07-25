@@ -38,15 +38,21 @@ export default function HomeHr() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/hr/stay"
-              className="inline-block bg-sage text-white px-8 py-3 rounded-lg font-medium hover:bg-sage/90 transition"
+              className="inline-block whitespace-nowrap border-2 border-white !text-white px-8 py-3 rounded-lg font-medium hover:bg-white/10 transition"
             >
               Planirajte svoj boravak
             </Link>
             <Link
               href="/hr/cheese_and_oil"
-              className="inline-block border-2 border-white !text-white px-8 py-3 rounded-lg font-medium hover:bg-white/10 transition"
+              className="inline-block whitespace-nowrap border-2 border-white !text-white px-8 py-3 rounded-lg font-medium hover:bg-white/10 transition"
             >
               Kušajte naše proizvode
+            </Link>
+            <Link
+              href="/hr/dental"
+              className="inline-block whitespace-nowrap border-2 border-white !text-white px-8 py-3 rounded-lg font-medium hover:bg-white/10 transition"
+            >
+              Stomatološki aranžmani
             </Link>
           </div>
         </div>
@@ -154,33 +160,33 @@ export default function HomeHr() {
           <p className="text-lg text-charcoal/80 mb-3">
             Bilo da planirate obiteljski odmor, wellness retreat ili romantični bijeg, Hlam vas čeka.
           </p>
-          <p className="text-sm text-charcoal/60 mb-8">
+          <p className="text-sm text-charcoal/60 mb-1">
             Nudimo i stomatološke aranžmane.{" "}
             <Link href="/hr/dental" className="text-sage hover:text-terracotta">
               Saznajte više →
             </Link>
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Link
-              href="/hr/stay"
-              className="bg-sage text-white px-8 py-3 rounded-lg font-medium hover:bg-sage/90 transition"
-            >
-              Istražite smještaj
+          <p className="text-sm text-charcoal/60 mb-8">
+            Imamo trgovinu sira i ulja.{" "}
+            <Link href="/hr/cheese_and_oil" className="text-sage hover:text-terracotta">
+              Dođite kušati →
             </Link>
-            <Link
-              href="/hr/cheese_and_oil"
-              className="bg-white text-sage border-2 border-sage px-8 py-3 rounded-lg font-medium hover:bg-sage/10 transition"
-            >
-              Kušajte naš sir
-            </Link>
+          </p>
+          <div className="mb-8 space-y-2">
+            <p>
+              <a href="tel:+385992147068" className="text-xl font-serif text-terracotta hover:text-sage">+385 99 214 7068</a>
+            </p>
+            <p>
+              <a href="mailto:example@example.com" className="text-charcoal hover:text-terracotta">example@example.com</a>
+            </p>
           </div>
-
           <p className="text-lg text-charcoal/70 mb-8">
             Pitanja? Rado ćemo vam pomoći isplanirati savršen boravak.
           </p>
           <WhatsAppCTA
             message="Pozdrav! Zanima me vaša ponuda."
             label="Pošaljite poruku na WhatsApp"
+            variant="white"
           />
 
           <div className="mt-12 pt-12 border-t border-sage/20 grid md:grid-cols-2 gap-8 text-center">

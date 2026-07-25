@@ -131,8 +131,11 @@ export default function DentalHr() {
           <p className="text-lg text-charcoal/70 mb-6">
             Recite nam što trebate i zajedno ćemo dogovoriti tretman i boravak.
           </p>
-          <p className="mb-6">
+          <p className="mb-2">
             <a href="tel:+385992147068" className="text-xl font-serif text-terracotta hover:text-sage">+385 99 214 7068</a>
+          </p>
+          <p className="mb-6">
+            <a href="mailto:example@example.com" className="text-charcoal hover:text-terracotta">example@example.com</a>
           </p>
           <WhatsAppCTA
             message="Pozdrav! Zanima me stomatološki aranžman."

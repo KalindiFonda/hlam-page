@@ -87,8 +87,11 @@ export default function HouseRules() {
             Questions about your stay? · Pitanja o boravku?
           </p>
           <WhatsAppCTA message="Hi Hlam! I have a question about the house rules." />
-          <p className="mt-6">
+          <p className="mt-6 mb-2">
             <a href="tel:+385992147068" className="text-charcoal hover:text-terracotta">+385 99 214 7068</a>
+          </p>
+          <p>
+            <a href="mailto:example@example.com" className="text-charcoal hover:text-terracotta">example@example.com</a>
           </p>
         </div>
       </section>

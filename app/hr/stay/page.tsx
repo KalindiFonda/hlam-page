@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import ImageGallery from "@/components/ImageGallery";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
@@ -164,10 +165,16 @@ export default function StayHr() {
             Recite nam svoju viziju. Grupe su dobrodošle. Zajedno ćemo stvoriti savršeno iskustvo.
           </p>
           <p className="mb-6 text-sm text-charcoal/60">
-            Nudimo i stomatološke aranžmane. Javite nam se za detalje.
+            Nudimo i stomatološke aranžmane.{" "}
+            <Link href="/hr/dental" className="text-sage hover:text-terracotta">
+              Saznajte više →
+            </Link>
+          </p>
+          <p className="mb-2">
+            <a href="tel:+385992147068" className="text-xl font-serif text-terracotta hover:text-sage">+385 99 214 7068</a>
           </p>
           <p className="mb-6">
-            <a href="tel:+385992147068" className="text-xl font-serif text-terracotta hover:text-sage">+385 99 214 7068</a>
+            <a href="mailto:example@example.com" className="text-charcoal hover:text-terracotta">example@example.com</a>
           </p>
           <WhatsAppCTA
             message="Pozdrav! Zanima me smještaj na Hlamu."

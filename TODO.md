@@ -1,6 +1,7 @@
 # HLAM Website — TODO
 
 ## Planned
+- [ ] Replace placeholder email `example@example.com` with the real address (appears in all contact sections)
 - [ ] Trgovina za tujino (shop/ordering for abroad)
 - [ ] Ability to book a cheese tasting (maybe a booking flow, not just WhatsApp)
 - [ ] Rate info for stays (seasonal rates — removed "contact us for seasonal rates" line for now)
@@ -13,6 +14,7 @@
 - [ ] Enable "Enforce HTTPS" on GitHub Pages once the hlam.hr certificate is issued
 
 ## Ideas / Nice to have
+- [ ] Brand font: [Dreaming Outloud](https://fonts.adobe.com/fonts/dreaming-outloud) might be the font used on the (cheese) packaging — consider it (or a similar free handwritten font, e.g. from Google Fonts: Caveat, Shadows Into Light) for accents on the site
 - [ ] Dentistry angle: the owner is a dentist. Dental tourism is big in Croatia; could pair treatment with a recovery stay in nature. Keep separate from the retreat brand (small mention or its own page later, not a main section).
 - [ ] Footer credit: "made by KF" linking to kalindifonda.com, inline with the © line (drafted, removed for now)
 - [ ] Per-cheese descriptions (removed from cheese page as too much; saved here):

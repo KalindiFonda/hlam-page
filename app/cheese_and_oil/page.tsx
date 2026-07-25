@@ -176,10 +176,13 @@ export default function Cheese() {
           </p>
           <a
             href="tel:+385992147068"
-            className="inline-block text-2xl font-serif text-terracotta hover:text-sage mb-8"
+            className="inline-block text-2xl font-serif text-terracotta hover:text-sage mb-2"
           >
             +385 99 214 7068
           </a>
+          <p className="mb-8">
+            <a href="mailto:example@example.com" className="text-charcoal hover:text-terracotta">example@example.com</a>
+          </p>
 
           <div className="mb-8">
             <WhatsAppCTA message="Hi Hlam! I'm interested in your cheese and olive oil." />
