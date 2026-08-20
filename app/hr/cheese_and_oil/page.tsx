@@ -180,13 +180,14 @@ export default function CheeseHr() {
             +385 99 214 7068
           </a>
           <p className="mb-8">
-            <a href="mailto:example@example.com" className="text-charcoal hover:text-terracotta">example@example.com</a>
+            <a href="mailto:matanicjasenka@gmail.com" className="text-charcoal hover:text-terracotta">matanicjasenka@gmail.com</a>
           </p>
 
           <div className="mb-8">
             <WhatsAppCTA
               message="Pozdrav! Zanimaju me vaši sirevi i maslinovo ulje."
               label="Pošaljite poruku na WhatsApp"
+              phone="385992147068"
             />
           </div>
 

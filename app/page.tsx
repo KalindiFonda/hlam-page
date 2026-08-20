@@ -174,10 +174,10 @@ export default function Home() {
           </p>
           <div className="mb-8 space-y-2">
             <p>
-              <a href="tel:+385992147068" className="text-xl font-serif text-terracotta hover:text-sage">+385 99 214 7068</a>
+              <a href="tel:+38641632944" className="text-xl font-serif text-terracotta hover:text-sage">+386 41 63 29 44</a>
             </p>
             <p>
-              <a href="mailto:example@example.com" className="text-charcoal hover:text-terracotta">example@example.com</a>
+              <a href="mailto:matanicjasenka@gmail.com" className="text-charcoal hover:text-terracotta">matanicjasenka@gmail.com</a>
             </p>
           </div>
           <p className="text-lg text-charcoal/70 mb-8">
@@ -188,7 +188,7 @@ export default function Home() {
           <div className="mt-12 pt-12 border-t border-sage/20 grid md:grid-cols-2 gap-8 text-center">
             <div>
               <p className="text-sage font-medium mb-2">Phone</p>
-              <a href="tel:+385992147068" className="text-charcoal hover:text-terracotta">+385 99 214 7068</a>
+              <a href="tel:+38641632944" className="text-charcoal hover:text-terracotta">+386 41 63 29 44</a>
             </div>
             <div>
               <p className="text-sage font-medium mb-2">Location</p>

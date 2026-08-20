@@ -88,10 +88,10 @@ export default function HouseRules() {
           </p>
           <WhatsAppCTA message="Hi Hlam! I have a question about the house rules." />
           <p className="mt-6 mb-2">
-            <a href="tel:+385992147068" className="text-charcoal hover:text-terracotta">+385 99 214 7068</a>
+            <a href="tel:+38641632944" className="text-charcoal hover:text-terracotta">+386 41 63 29 44</a>
           </p>
           <p>
-            <a href="mailto:example@example.com" className="text-charcoal hover:text-terracotta">example@example.com</a>
+            <a href="mailto:matanicjasenka@gmail.com" className="text-charcoal hover:text-terracotta">matanicjasenka@gmail.com</a>
           </p>
         </div>
       </section>

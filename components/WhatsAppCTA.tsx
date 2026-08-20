@@ -2,13 +2,14 @@ export default function WhatsAppCTA({
   message = "Hi Hlam! I'm interested in learning more about what you offer.",
   label = "Message on WhatsApp",
   variant = "solid",
+  phone = "38641632944", // +386 41 63 29 44 without +
 }: {
   message?: string;
   label?: string;
   variant?: "solid" | "white";
+  phone?: string;
 }) {
-  const phoneNumber = "385992147068"; // +385 99 214 7068 without +
-  const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  const whatsappLink = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
   const styles =
     variant === "white"
       ? "bg-white !text-sage border-2 border-sage hover:bg-sage/10"
