@@ -172,10 +172,10 @@ export default function Stay() {
             </Link>
           </p>
           <p className="mb-2">
-            <a href="tel:+385992147068" className="text-xl font-serif text-terracotta hover:text-sage">+385 99 214 7068</a>
+            <a href="tel:+38641632944" className="text-xl font-serif text-terracotta hover:text-sage">+386 41 63 29 44</a>
           </p>
           <p className="mb-6">
-            <a href="mailto:example@example.com" className="text-charcoal hover:text-terracotta">example@example.com</a>
+            <a href="mailto:matanicjasenka@gmail.com" className="text-charcoal hover:text-terracotta">matanicjasenka@gmail.com</a>
           </p>
           <WhatsAppCTA message="Hi Hlam! I'm interested in learning more about your accommodation." />
         </div>
